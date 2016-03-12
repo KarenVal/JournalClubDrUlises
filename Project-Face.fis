@@ -1,0 +1,122 @@
+[System]
+Name='Project-Face'
+Type='mamdani'
+Version=2.0
+NumInputs=8
+NumOutputs=1
+NumRules=2
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='P1'
+Range=[0 2047]
+NumMFs=7
+MF1='lowest':'trapmf',[-1.8 -0.2 81.46 307]
+MF2='verylow':'trimf',[196 394.778571428571 457]
+MF3='Low':'trimf',[403 495.039795918367 792]
+MF4='Normal':'trapmf',[635 863 1075.7193877551 1320]
+MF5='high':'trimf',[1130 1451.69897959184 1600]
+MF6='veryhigh':'trimf',[1460 1522.71734693878 1810]
+MF7='highest':'trapmf',[1720 1961.36020408163 2080 2360]
+
+[Input2]
+Name='P2'
+Range=[0 2047]
+NumMFs=7
+MF1='lowest':'trapmf',[-1.8 -0.2 81.46 307]
+MF2='verylow':'trimf',[196 394.8 457]
+MF3='low':'trimf',[403 495 792]
+MF4='normal':'trapmf',[635 863 1076 1320]
+MF5='high':'trimf',[1130 1452 1600]
+MF6='veryhigh':'trimf',[1460 1523 1810]
+MF7='highest':'trapmf',[1720 1961 2080 2360]
+
+[Input3]
+Name='P3'
+Range=[0 2047]
+NumMFs=7
+MF1='lowest':'trapmf',[-1.8 -0.2 81.46 307]
+MF2='verylow':'trimf',[196 394.8 457]
+MF3='low':'trimf',[403 495 792]
+MF4='normal':'trapmf',[635 863 1076 1320]
+MF5='high':'trimf',[1130 1452 1600]
+MF6='veryhigh':'trimf',[1460 1523 1810]
+MF7='highest':'trapmf',[1720 1961 2080 2360]
+
+[Input4]
+Name='P4'
+Range=[0 2047]
+NumMFs=7
+MF1='lowest':'trapmf',[-1.8 -0.2 81.46 307]
+MF2='verylow':'trimf',[196 394.8 457]
+MF3='low':'trimf',[403 495 792]
+MF4='normal':'trapmf',[635 863 1076 1320]
+MF5='high':'trimf',[1130 1452 1600]
+MF6='veryhigh':'trimf',[1460 1523 1810]
+MF7='highest':'trapmf',[1720 1961 2080 2360]
+
+[Input5]
+Name='P5'
+Range=[0 2047]
+NumMFs=7
+MF1='lowest':'trapmf',[-1.8 -0.2 81.46 307]
+MF2='verylow':'trimf',[196 394.8 457]
+MF3='low':'trimf',[403 495 792]
+MF4='normal':'trapmf',[635 863 1076 1320]
+MF5='high':'trimf',[1130 1452 1600]
+MF6='veryhigh':'trimf',[1460 1523 1810]
+MF7='highest':'trapmf',[1720 1961 2080 2360]
+
+[Input6]
+Name='P6'
+Range=[0 2047]
+NumMFs=7
+MF1='lowest':'trapmf',[-1.8 -0.2 81.46 307]
+MF2='verylow':'trimf',[196 394.8 457]
+MF3='low':'trimf',[403 495 792]
+MF4='normal':'trapmf',[635 863 1076 1320]
+MF5='high':'trimf',[1130 1452 1600]
+MF6='veryhigh':'trimf',[1460 1523 1810]
+MF7='highest':'trapmf',[1720 1961 2080 2360]
+
+[Input7]
+Name='P7'
+Range=[0 2047]
+NumMFs=7
+MF1='lowest':'trapmf',[-1.8 -0.2 81.46 307]
+MF2='verylow':'trimf',[196 394.8 457]
+MF3='low':'trimf',[403 495 792]
+MF4='normal':'trapmf',[635 863 1076 1320]
+MF5='high':'trimf',[1130 1452 1600]
+MF6='veryhigh':'trimf',[1460 1523 1810]
+MF7='highest':'trapmf',[1720 1961 2080 2360]
+
+[Input8]
+Name='P8'
+Range=[0 2047]
+NumMFs=7
+MF1='lowest':'trapmf',[-1.8 -0.2 81.46 307]
+MF2='verylow':'trimf',[196 394.8 457]
+MF3='low':'trimf',[403 495 792]
+MF4='normal':'trapmf',[635 863 1076 1320]
+MF5='high':'trimf',[1130 1452 1600]
+MF6='veryhigh':'trimf',[1460 1523 1810]
+MF7='highest':'trapmf',[1720 1961 2080 2360]
+
+[Output1]
+Name='Configuration'
+Range=[0 25]
+NumMFs=5
+MF1='sinking':'trimf',[0 2.5 5]
+MF2='valley':'trimf',[5 7.5 10]
+MF3='flat':'trimf',[10 12.5 15]
+MF4='elevation':'trimf',[15 17.5 20]
+MF5='slope':'trimf',[20 22.5 25]
+
+[Rules]
+1 1 1 1 4 4 4 4, 5 (1) : 1
+4 4 4 4 4 4 4 4, 3 (1) : 1
